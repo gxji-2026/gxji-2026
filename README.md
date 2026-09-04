@@ -1,56 +1,95 @@
 # George X. Ji, Ph.D.
 
-**Principal Engineer | RF/FBAW | AI Engineering | LLM Agents**
+**RF & Signal Processing Engineer | AI-Assisted Engineering | Engineering Agents**
 
-I work at the intersection of **RF/microwave engineering**, **FBAW/DFR filter technologies**, **physics-constrained numerical optimization**, and **autonomous LLM-based engineering agents**.
+I work at the intersection of **RF engineering, signal processing, numerical optimization, and AI agent systems**, with a current focus on applying LLM-based engineering agents to physics-constrained engineering design.
 
-My current work explores how domain-specific engineering knowledge, deterministic numerical verification, and LLM-driven tool use can be integrated into reliable engineering-agent workflows.
+My background spans **electronics, wireless communications, signal processing, algorithms, and RF system/circuit design**, with experience ranging from system-level architecture to detailed RF design and numerical optimization.
+
+---
 
 ## Featured Project
 
-### DSH FBAW Engineering Agent
+### FBAW Engineering Agent
 
-An autonomous RF engineering agent integrating:
+A **physics-constrained autonomous engineering-agent framework** for FBAW/DFR filter optimization, combining LLM reasoning and tool use with deterministic Python-based RF verification.
 
-**DeepSeek V4-Flash → DeepSeek Harness (DSH) → Native FBAW Engineering Tools → Deterministic Python RF Verification**
+The project explores a central engineering-agent principle:
 
-The agent uses an LLM planner for engineering decisions while a deterministic Python RF core retains numerical authority over simulation, constrained optimization, ACCEPT/REJECT decisions, rollback, verification, and STOP authorization.
+> **LLM plans and selects actions; deterministic engineering tools establish numerical truth.**
 
-**Repository:**  
-https://github.com/gxji-2026/dsh-fbaw-engineering-agent
+The same engineering-agent architecture is implemented through three runtime/provider paths:
 
-**Latest release:** `v1.0.0`
+* ⭐ **DSH-native FBAW Engineering Agent** — primary/reference implementation
+* **DeepSeek FBAW Engineering Agent** — direct-API reference implementation
+* **Cohere FBAW Engineering Agent** — cross-provider reference implementation
 
-Verified benchmark:
+### Agent Loop
 
-| Condition | Passband Ripple |
-|---|---:|
-| Nominal | **0.539940 dB** |
-| Q80/Cp40 | **0.6181 dB** |
-| Q60/Cp60 | **0.745393 dB** |
+**LLM Planning → Tool Execution → Python RF Verification → Accept / Reject / Rollback → Re-plan → Python-authorized STOP**
 
-Worst far-stop rejection: **50.240 dB**
+The Python RF core performs physics-constrained simulation, optimization, hard-goal evaluation, verified-state management, and rollback. The LLM provides reasoning and action selection but does not have numerical acceptance authority.
 
-## Engineering Agent Series
+➡️ **[Explore the FBAW Engineering Agent](https://github.com/gxji-2026/dsh-fbaw-engineering-agent)**
 
-This repository is the first release in a broader engineering-agent series:
+---
 
-1. **DSH FBAW Engineering Agent** — DSH-native autonomous agent
-2. **DeepSeek FBAW Engineering Agent** — direct API with Flash → Pro escalation
-3. **Cohere FBAW Engineering Agent** — cross-provider implementation
+## Current Technical Interests
 
-## Research & Engineering Focus
+* **Engineering Agents & Agent Harnesses**
+* **LLM Tool Use and Agent Loops**
+* **Context Engineering and Memory Architecture**
+* **Deterministic verification for LLM-based engineering**
+* **Physics-constrained optimization**
+* **RF / microwave filter design**
+* **FBAW / BAW resonators and filters**
+* **Signal processing and numerical algorithms**
+* **AI-assisted scientific and engineering workflows**
+* **Multi-provider agent architectures**
 
-- RF and microwave filter design
-- FBAW / DFR acoustic filter technologies
-- SFR-based transmission-zero synthesis
-- Physics-constrained optimization
-- AI-assisted engineering design
-- LLM tool-calling and autonomous engineering agents
-- Deterministic verification of AI-generated engineering actions
+---
 
-## Technical Direction
+## Engineering-Agent Philosophy
 
-**RF physics → numerical optimization → AI-assisted design → autonomous engineering agents**
+For engineering applications, an LLM does not need to replace the numerical solver.
 
-The objective is not to replace deterministic engineering analysis with an LLM, but to use the LLM as a planning and tool-orchestration layer while preserving physics-based numerical verification.
+A more robust architecture is:
+
+**LLM reasoning + agent orchestration + domain tools + deterministic numerical authority**
+
+This separation allows the agent to reason, explore alternatives, recover from failed actions, and autonomously re-plan, while physics-based computation remains responsible for accepting or rejecting engineering results.
+
+My current work investigates how this pattern can be generalized beyond RF design to other **physics-constrained engineering optimization problems**.
+
+---
+
+## Background
+
+My technical background is primarily in **electronics, wireless communications, signal processing, and algorithms**, complemented by more than a decade of work in **RF design**.
+
+My engineering experience spans both:
+
+* **Macro-level:** system architecture, signal-processing concepts, design methodology, optimization strategy
+* **Micro-level:** RF circuits, resonator/filter design, parameter tuning, simulation, verification, and implementation constraints
+
+This combination motivates my current interest in connecting traditional engineering computation with modern **LLMs, agent systems, and autonomous engineering workflows**.
+
+---
+
+## Selected Tools & Technologies
+
+**AI / Agents:** DeepSeek Harness (DSH), DeepSeek API, Cohere API, LLM tool calling, agent loops, persistent state, verification-driven workflows
+
+**Engineering:** Python, Keysight ADS, COMSOL, numerical optimization, RF simulation, FBAW/DFR filter synthesis
+
+**Core Areas:** RF engineering, signal processing, wireless communications, algorithms, numerical modeling
+
+---
+
+## Collaboration
+
+I am interested in discussions and collaborations involving:
+
+**Engineering Agents · Agent Harnesses · AI for Engineering · RF/Signal Processing · Physics-Constrained Optimization · Autonomous Scientific Workflows**
+
+The **FBAW Engineering Agent** repository provides a working example of these ideas implemented as a real engineering workflow.
