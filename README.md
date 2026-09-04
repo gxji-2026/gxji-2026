@@ -30,7 +30,7 @@ The same engineering-agent architecture is implemented through three runtime/pro
 
 The Python RF core performs physics-constrained simulation, optimization, hard-goal evaluation, verified-state management, and rollback. The LLM provides reasoning and action selection but does not have numerical acceptance authority.
 
-➡️ **[Explore the FBAW Engineering Agent](https://github.com/gxji-2026/dsh-fbaw-engineering-agent)**
+➡️ **[Explore the FBAW Engineering Agent](https://github.com/gxji-2026/fbaw-engineering-agent)**
 
 ---
 
